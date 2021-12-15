@@ -1,0 +1,1996 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7119115200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify that user should create account successfully",
+        "description": "",
+        "id": "create-account-test;verify-that-user-should-create-account-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 760599800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 111453600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on homepage",
+            "match": {
+              "location": "SignInSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1767195700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click on sign-in link",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 198372300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter email for registration",
+            "match": {
+              "location": "CreateAccountTest.userEnterEmailForRegistration()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91291100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click on create account link",
+            "match": {
+              "location": "CreateAccountTest.userClickOnCreateAccountLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1456935600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User fill personal information form \u003c\"George\"\u003e \u003c\"Smith\"\u003e \u003c\"Hello1234\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "George",
+                  "offset": 38
+                },
+                {
+                  "val": "Smith",
+                  "offset": 49
+                },
+                {
+                  "val": "Hello1234",
+                  "offset": 59
+                }
+              ],
+              "location": "CreateAccountTest.userFillPersonalInformationForm(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 710557700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User fill address details \u003c\"1 Nice Building\"\u003e \u003c\"Maryland\"\u003e \u003c\"Ohio\"\u003e \u003c\"12345\"\u003e \u003c\"United States\"\u003e \u003c\"0123456789\"\u003e \u003c\"main home\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1 Nice Building",
+                  "offset": 28
+                },
+                {
+                  "val": "Maryland",
+                  "offset": 48
+                },
+                {
+                  "val": "Ohio",
+                  "offset": 61
+                },
+                {
+                  "val": "12345",
+                  "offset": 70
+                },
+                {
+                  "val": "United States",
+                  "offset": 80
+                },
+                {
+                  "val": "0123456789",
+                  "offset": 98
+                },
+                {
+                  "val": "main home",
+                  "offset": 113
+                }
+              ],
+              "location": "CreateAccountTest.userFillAddressDetails(String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1491226000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click on register button",
+            "match": {
+              "location": "CreateAccountTest.userClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41788400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should create account successfully and get \u003c\"My account\"\u003e text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My account",
+                  "offset": 50
+                }
+              ],
+              "location": "CreateAccountTest.userShouldCreateAccountSuccessfullyAndGetText(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Create account test",
+    "description": "",
+    "id": "create-account-test",
+    "keyword": "Feature",
+    "uri": "createAccount.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5292176500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User should navigate to sign-in page successfully",
+        "description": "",
+        "id": "sign-in-page-test;user-should-navigate-to-sign-in-page-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 822964900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on homepage",
+            "match": {
+              "location": "SignInSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2005556600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click on sign-in link",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52928900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User verify sign-in page text \u003c\"AUTHENTICATION\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AUTHENTICATION",
+                  "offset": 32
+                }
+              ],
+              "location": "SignInSteps.userVerifySignInPageText(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4762806400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "User should get error message when login in with invalid credentials",
+        "description": "",
+        "id": "sign-in-page-test;user-should-get-error-message-when-login-in-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 756858400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 41000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on homepage",
+            "match": {
+              "location": "SignInSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1427757200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on sign-in link",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 168664800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User sign in with invalid username and password \"\" \"password123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 49
+                },
+                {
+                  "val": "password123",
+                  "offset": 52
+                }
+              ],
+              "location": "SignInSteps.userSignInWithInvalidUsernameAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 909290700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click on sign-in button",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30010600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should see error message \"An email address required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "An email address required.",
+                  "offset": 31
+                }
+              ],
+              "location": "SignInSteps.userShouldSeeErrorMessage(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Smoke"
+          },
+          {
+            "line": 9,
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5340026800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "User should get error message when login in with invalid credentials",
+        "description": "",
+        "id": "sign-in-page-test;user-should-get-error-message-when-login-in-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 801018000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 31700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on homepage",
+            "match": {
+              "location": "SignInSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1823717100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on sign-in link",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 179584200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User sign in with invalid username and password \"abcd@gmail.com\" \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcd@gmail.com",
+                  "offset": 49
+                },
+                {
+                  "val": "",
+                  "offset": 66
+                }
+              ],
+              "location": "SignInSteps.userSignInWithInvalidUsernameAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1075033800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click on sign-in button",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29934600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should see error message \"Password is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password is required.",
+                  "offset": 31
+                }
+              ],
+              "location": "SignInSteps.userShouldSeeErrorMessage(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Smoke"
+          },
+          {
+            "line": 9,
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4443708900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User should get error message when login in with invalid credentials",
+        "description": "",
+        "id": "sign-in-page-test;user-should-get-error-message-when-login-in-with-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 777459200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 38200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on homepage",
+            "match": {
+              "location": "SignInSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1309647600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on sign-in link",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 187076600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User sign in with invalid username and password \"adfdfgfg\" \"password12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "adfdfgfg",
+                  "offset": 49
+                },
+                {
+                  "val": "password12",
+                  "offset": 60
+                }
+              ],
+              "location": "SignInSteps.userSignInWithInvalidUsernameAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1026904800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click on sign-in button",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34219600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should see error message \"Invalid email address.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid email address.",
+                  "offset": 31
+                }
+              ],
+              "location": "SignInSteps.userShouldSeeErrorMessage(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Smoke"
+          },
+          {
+            "line": 9,
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4599303100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "User should get error message when login in with invalid credentials",
+        "description": "",
+        "id": "sign-in-page-test;user-should-get-error-message-when-login-in-with-invalid-credentials;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 785104100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 24800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on homepage",
+            "match": {
+              "location": "SignInSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1979727700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on sign-in link",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 196849900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User sign in with invalid username and password \"abcd@gmail.com\" \"pass123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcd@gmail.com",
+                  "offset": 49
+                },
+                {
+                  "val": "pass123",
+                  "offset": 66
+                }
+              ],
+              "location": "SignInSteps.userSignInWithInvalidUsernameAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1412270100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click on sign-in button",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29420500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should see error message \"Authentication failed.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Authentication failed.",
+                  "offset": 31
+                }
+              ],
+              "location": "SignInSteps.userShouldSeeErrorMessage(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Smoke"
+          },
+          {
+            "line": 9,
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4429618400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Verify that user should login successfully with valid credentials",
+        "description": "",
+        "id": "sign-in-page-test;verify-that-user-should-login-successfully-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 772758000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 29200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User is on homepage",
+            "match": {
+              "location": "SignInSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1690045000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User click on sign-in link",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38853100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User verify sign-in page text \u003c\"AUTHENTICATION\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AUTHENTICATION",
+                  "offset": 32
+                }
+              ],
+              "location": "SignInSteps.userVerifySignInPageText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 213966200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User enter valid email and password \u003c\"georgesmith@gmail.com\"\u003e and \u003c\"acd1234\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "georgesmith@gmail.com",
+                  "offset": 38
+                },
+                {
+                  "val": "acd1234",
+                  "offset": 68
+                }
+              ],
+              "location": "SignInSteps.userEnterValidEmailAndPasswordAnd(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1302313000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User click on sign-in button",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37382000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User should login successfully and see \u0027sign-out\u0027 button",
+            "match": {
+              "location": "SignInSteps.userShouldLoginSuccessfullyAndSeeSignOutButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 23,
+            "name": "@Sanity"
+          },
+          {
+            "line": 23,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5840293400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Verify that user should logout successfully",
+        "description": "",
+        "id": "sign-in-page-test;verify-that-user-should-logout-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 737207500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 31800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User is on homepage",
+            "match": {
+              "location": "SignInSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1809224000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User click on sign-in link",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34903800,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User verify sign-in page text \u003c\"AUTHENTICATION\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AUTHENTICATION",
+                  "offset": 32
+                }
+              ],
+              "location": "SignInSteps.userVerifySignInPageText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 206483000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User enter valid email and password \u003c\"georgesmith@gmail.com\"\u003e and \u003c\"acd1234\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "georgesmith@gmail.com",
+                  "offset": 38
+                },
+                {
+                  "val": "acd1234",
+                  "offset": 68
+                }
+              ],
+              "location": "SignInSteps.userEnterValidEmailAndPasswordAnd(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3296558800,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User click on sign-in button",
+            "match": {
+              "location": "SignInSteps.userClickOnSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34768800,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User should login successfully and see \u0027sign-out\u0027 button",
+            "match": {
+              "location": "SignInSteps.userShouldLoginSuccessfullyAndSeeSignOutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1545569400,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User should click on sign-out button",
+            "match": {
+              "location": "SignInSteps.userShouldClickOnSignOutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31074100,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User should signout successfully and see \u0027sign-in\u0027 button",
+            "match": {
+              "location": "SignInSteps.userShouldSignoutSuccessfullyAndSeeSignInButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "SIgn in page test",
+    "description": "",
+    "id": "sign-in-page-test",
+    "keyword": "Feature",
+    "uri": "signInPageTest.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4934834800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify that user should successfully navigate to women category page",
+        "description": "",
+        "id": "test-women-category-page;verify-that-user-should-successfully-navigate-to-women-category-page",
+        "after": [
+          {
+            "result": {
+              "duration": 734685700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 36000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on homepage",
+            "match": {
+              "location": "SignInSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1576775800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click on women tab",
+            "match": {
+              "location": "WomenCategorySteps.userClickOnWomenTab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26890500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should successfully navigate to women category page and verify \u003c\"WOMEN\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "WOMEN",
+                  "offset": 70
+                }
+              ],
+              "location": "WomenCategorySteps.userShouldSuccessfullyNavigateToWomenCategoryPageAndVerify(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5214710900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Verify that user add product to cart successfully",
+        "description": "",
+        "id": "test-women-category-page;verify-that-user-add-product-to-cart-successfully;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 734530700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 35000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on homepage",
+            "match": {
+              "location": "SignInSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1741362900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on women tab",
+            "match": {
+              "location": "WomenCategorySteps.userClickOnWomenTab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34662400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should successfully navigate to women category page and verify \u003c\"WOMEN\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "WOMEN",
+                  "offset": 70
+                }
+              ],
+              "location": "WomenCategorySteps.userShouldSuccessfullyNavigateToWomenCategoryPageAndVerify(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1775479500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click on the product \"Blouse\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blouse",
+                  "offset": 27
+                }
+              ],
+              "location": "WomenCategorySteps.userClickOnTheProduct(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 216814300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User change quantity \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 22
+                }
+              ],
+              "location": "WomenCategorySteps.userChangeQuantity(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105662100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User select size \"M\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "M",
+                  "offset": 18
+                }
+              ],
+              "location": "WomenCategorySteps.userSelectSize(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80693500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User select colour \"White\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "White",
+                  "offset": 20
+                }
+              ],
+              "location": "WomenCategorySteps.userSelectColour(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56770200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on Add To Cart Button",
+            "match": {
+              "location": "WomenCategorySteps.userClickOnAddToCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28829900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify the message \u003c\"Product successfully added to your shopping cart\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Product successfully added to your shopping cart",
+                  "offset": 21
+                }
+              ],
+              "location": "WomenCategorySteps.verifyTheMessage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click on X button and close the popup",
+            "match": {
+              "location": "WomenCategorySteps.clickOnXButtonAndCloseThePopup()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Sanity"
+          },
+          {
+            "line": 9,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4842228400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Verify that user add product to cart successfully",
+        "description": "",
+        "id": "test-women-category-page;verify-that-user-add-product-to-cart-successfully;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 770465000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 29700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on homepage",
+            "match": {
+              "location": "SignInSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2337817700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on women tab",
+            "match": {
+              "location": "WomenCategorySteps.userClickOnWomenTab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28974700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should successfully navigate to women category page and verify \u003c\"WOMEN\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "WOMEN",
+                  "offset": 70
+                }
+              ],
+              "location": "WomenCategorySteps.userShouldSuccessfullyNavigateToWomenCategoryPageAndVerify(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1750640200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click on the product \"Printed Dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Printed Dress",
+                  "offset": 27
+                }
+              ],
+              "location": "WomenCategorySteps.userClickOnTheProduct(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203465400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User change quantity \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 22
+                }
+              ],
+              "location": "WomenCategorySteps.userChangeQuantity(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88421300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User select size \"L\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "L",
+                  "offset": 18
+                }
+              ],
+              "location": "WomenCategorySteps.userSelectSize(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64642900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User select colour \"Orange\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Orange",
+                  "offset": 20
+                }
+              ],
+              "location": "WomenCategorySteps.userSelectColour(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50935400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on Add To Cart Button",
+            "match": {
+              "location": "WomenCategorySteps.userClickOnAddToCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30467100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify the message \u003c\"Product successfully added to your shopping cart\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Product successfully added to your shopping cart",
+                  "offset": 21
+                }
+              ],
+              "location": "WomenCategorySteps.verifyTheMessage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 24100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click on X button and close the popup",
+            "match": {
+              "location": "WomenCategorySteps.clickOnXButtonAndCloseThePopup()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Sanity"
+          },
+          {
+            "line": 9,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4857418100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Verify that user add product to cart successfully",
+        "description": "",
+        "id": "test-women-category-page;verify-that-user-add-product-to-cart-successfully;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 758406200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 37800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on homepage",
+            "match": {
+              "location": "SignInSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2703059000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on women tab",
+            "match": {
+              "location": "WomenCategorySteps.userClickOnWomenTab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37068000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should successfully navigate to women category page and verify \u003c\"WOMEN\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "WOMEN",
+                  "offset": 70
+                }
+              ],
+              "location": "WomenCategorySteps.userShouldSuccessfullyNavigateToWomenCategoryPageAndVerify(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1722997100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click on the product \"Printed Chiffon Dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Printed Chiffon Dress",
+                  "offset": 27
+                }
+              ],
+              "location": "WomenCategorySteps.userClickOnTheProduct(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 220964700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User change quantity \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 22
+                }
+              ],
+              "location": "WomenCategorySteps.userChangeQuantity(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61488100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User select size \"S\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "S",
+                  "offset": 18
+                }
+              ],
+              "location": "WomenCategorySteps.userSelectSize(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77426000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User select colour \"Green\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Green",
+                  "offset": 20
+                }
+              ],
+              "location": "WomenCategorySteps.userSelectColour(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58850500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on Add To Cart Button",
+            "match": {
+              "location": "WomenCategorySteps.userClickOnAddToCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28065000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify the message \u003c\"Product successfully added to your shopping cart\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Product successfully added to your shopping cart",
+                  "offset": 21
+                }
+              ],
+              "location": "WomenCategorySteps.verifyTheMessage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click on X button and close the popup",
+            "match": {
+              "location": "WomenCategorySteps.clickOnXButtonAndCloseThePopup()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Sanity"
+          },
+          {
+            "line": 9,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6096458600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Verify that user add product to cart successfully",
+        "description": "",
+        "id": "test-women-category-page;verify-that-user-add-product-to-cart-successfully;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 786515400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 23900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on homepage",
+            "match": {
+              "location": "SignInSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2544304200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click on women tab",
+            "match": {
+              "location": "WomenCategorySteps.userClickOnWomenTab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30226300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should successfully navigate to women category page and verify \u003c\"WOMEN\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "WOMEN",
+                  "offset": 70
+                }
+              ],
+              "location": "WomenCategorySteps.userShouldSuccessfullyNavigateToWomenCategoryPageAndVerify(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2112976400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click on the product \"Printed Summer Dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Printed Summer Dress",
+                  "offset": 27
+                }
+              ],
+              "location": "WomenCategorySteps.userClickOnTheProduct(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233553300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User change quantity \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 22
+                }
+              ],
+              "location": "WomenCategorySteps.userChangeQuantity(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48326400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User select size \"S\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "S",
+                  "offset": 18
+                }
+              ],
+              "location": "WomenCategorySteps.userSelectSize(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88588800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User select colour \"Blue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blue",
+                  "offset": 20
+                }
+              ],
+              "location": "WomenCategorySteps.userSelectColour(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52717700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on Add To Cart Button",
+            "match": {
+              "location": "WomenCategorySteps.userClickOnAddToCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33964900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify the message \u003c\"Product successfully added to your shopping cart\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Product successfully added to your shopping cart",
+                  "offset": 21
+                }
+              ],
+              "location": "WomenCategorySteps.verifyTheMessage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click on X button and close the popup",
+            "match": {
+              "location": "WomenCategorySteps.clickOnXButtonAndCloseThePopup()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Sanity"
+          },
+          {
+            "line": 9,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Test women category page",
+    "description": "",
+    "id": "test-women-category-page",
+    "keyword": "Feature",
+    "uri": "womenCategoryTest.feature"
+  }
+]
